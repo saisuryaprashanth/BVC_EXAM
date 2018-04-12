@@ -1,0 +1,38 @@
+﻿
+.auto-style1 {
+    width: 100%;
+}
+
+.auto-style2 {
+    width: 162px;
+    text-align: right;
+}
+
+.auto-style4 {
+    width: 162px;
+    height: 23px;
+    text-align: right;
+}
+
+.auto-style5 {
+    height: 23px;
+}
+
+.auto-style6 {
+    width: 204px;
+}
+
+.auto-style7 {
+    height: 23px;
+    width: 204px;
+}
+
+.txt {
+    width: 227px;
+    background: transparent url('../background/bg.jpg') no-repeat;
+    color: #747862;
+    height: 20px;
+    border: 0;
+    padding: 6px 10px;
+    margin-bottom: 0px;
+}

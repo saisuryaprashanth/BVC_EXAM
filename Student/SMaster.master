@@ -1,0 +1,63 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Student_SMaster, App_Web_2wpjolmy" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="../Stylesheets/MASTERSheet.css" rel="stylesheet" />
+    <link href="../Stylesheets/animate.css" rel="stylesheet" />
+    <link href="../Stylesheets/bootstrap.css" rel="stylesheet" />
+    <link href="../Stylesheets/font-awesome.css" rel="stylesheet" />
+    <link href="../Stylesheets/nexus.css" rel="stylesheet" />
+    <link href="../Stylesheets/responsive.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .bgimg {
+            height: 124px;
+        }
+        
+        .auto-style8 {
+            width: 100%;
+            height: 0px;
+        }
+    </style>
+    </head>
+    <body class="border" runat="server">
+        <form runat="server">
+
+<div class="container">    
+    
+    
+                <header class="bgimg" style="background-image: url('/background/bvc header new1.jpg'); background-position: center top; background-repeat: no-repeat; "></header>
+    <nav class="auto-style8">
+                    <ul >
+ <li><label class="lbllog" runat="server" id="label" style="left:40%"></label> </li>
+    <asp:Button runat="server" Text="Logout" CausesValidation="false" CssClass="log side" OnClick="Unnamed1_Click" />
+                        
+                        </ul>
+
+        </nav>
+    <article>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+                    <link href="../Stylesheets/Adefault.css" rel="stylesheet" />
+    
+                <nav class="d">
+    <button runat="server" class="button" formaction="SHome.aspx"><span>Home</span></button>
+    <button runat="server" class="button" formaction="SProfile.aspx"><span>Profile</span></button>
+    <button runat="server" class="button" formaction="SDefault.aspx"><span>Exam</span></button>
+    </nav>
+    <article class="arc">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" >
+                    </asp:ContentPlaceHolder>
+</article>
+                    </asp:ContentPlaceHolder>
+        </article>
+    </div>
+            </form>
+    <footer>Copyright &copy; Bhavans Vivekananda College</footer>
+    
+</body>
+</html>

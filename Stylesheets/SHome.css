@@ -1,0 +1,22 @@
+﻿.margin {
+    top: 29%;
+    position: absolute;
+}
+
+.btn {
+    right:10%;
+    border: none;
+    color: white;
+    
+    padding: 2px 8px;
+    cursor: pointer;
+    position:absolute;
+}
+.side {
+    background-color: #2196F3;
+    
+}
+.side:hover {
+        background: #0b7dda;
+    }
+

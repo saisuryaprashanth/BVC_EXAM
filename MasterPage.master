@@ -1,0 +1,81 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_y1eteq5p" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="Stylesheets/animate.css" rel="stylesheet" />
+    <link href="Stylesheets/font-awesome.css" rel="stylesheet" />
+    <link href="Stylesheets/nexus.css" rel="stylesheet" />
+    <link href="Stylesheets/responsive.css" rel="stylesheet" />
+    <link href="Stylesheets/MASTERSheet.css" rel="stylesheet" />
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .bgimg {
+            height: 124px;
+        }
+        
+        .auto-style8 {
+            width: 100%;
+            height: 0px;
+        }
+        .auto-style9 {
+            width: 198px;
+            height: 34px;
+        }
+        .auto-style10 {
+            width: 112px;
+        }
+        .auto-style11 {
+            font-size: 20px;
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 45px;
+            text-decoration: none;
+            width: 53px;
+        }
+    </style>
+    </head>
+    <body class="border">
+<div class="container">    
+    
+    
+                <header class="bgimg" style="background-image: url('/background/bvc header new1.jpg'); background-position: center top; background-repeat: no-repeat; "></header>
+    <nav class="auto-style8">
+                    <ul >
+  <li><a runat="server" href="HomePage.aspx">Home</a></li>
+  <li class="dropdown" style="height: 35px; width: 141px">
+    <a runat="server" href="Student/SLogin.aspx"  class="auto-style11">Student</a>
+    <div class="dropdown-content">
+      <a runat="server" href="Student/SLogin.aspx"  style="width:130px">Login</a>
+      <a runat="server" href="Student/SRegistration.aspx" style="width:130px">Registration</a>
+    </div>
+        </li>
+  <li class="dropdown" style="height: 35px; width: 142px;">
+    
+ <a href="Faculty/FLogin.aspx" runat="server" class="auto-style11">Faculty</a>
+    <div class="dropdown-content">
+      <a href="Faculty/FLogin.aspx" runat="server" style="width:130px" >Login</a>
+      <a href="Faculty/FRegistration.aspx" runat="server" style="width:130px">Registration</a>
+    </div>
+      </li>
+  <li class="auto-style9"><a href="Administrator/AdminLogin.aspx" runat="server" class="auto-style10">Administrator</a></li>
+ </ul>
+        </nav>
+    <article>
+        <form runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+                    </asp:ContentPlaceHolder>
+            </form>
+        </article>
+    <footer>Copyright &copy; Bhavans Vivekananda College</footer>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,131 @@
+﻿.ItemStyle {
+    width: 110px;
+    background-color: #758564;
+    color: #000;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.selected {
+    background-color: #852B91;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1a75ff;
+    height: 50px;
+}
+
+li {
+    float: left;
+    width: 132px;
+}
+
+    li a, .dropbtn {
+        font-size:20px;
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 45px;
+        text-decoration: none;
+    }
+
+li a:hover, .dropdown:hover .dropbtn {
+            background-color: dodgerblue;
+        }
+
+    li.dropdown {
+        display: inline-block;
+    height: 24px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1a75ff;
+    min-width: 160px;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-size:20px;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display:block;
+        text-align: left;
+}
+
+    .dropdown-content a:hover {
+        background-color: dodgerblue;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    border: 1px solid gray;
+    height:100%;
+}
+
+header, footer {
+    color: black;
+    background-color: white;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    margin: 0;
+}
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        nav ul a {
+            text-decoration: none;
+    height: 21px;
+    width: 40px;
+}
+
+article {
+    padding-bottom:inherit;
+    border-left: 1px solid gray;
+    padding-top:3.5%;
+    overflow: hidden;
+    height:100%
+}
+
+body.border{
+    height:100%;
+}
+
+.lbllog{
+    position:absolute;
+    right:35%;
+    font-size:20px;
+    color:white;
+    top: 142px;
+}
+
+.lbltxt{
+    position:absolute;
+    right:45%;
+    font-size:22px;
+    color:white;
+    top:143px;
+}

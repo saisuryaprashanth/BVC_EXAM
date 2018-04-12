@@ -1,0 +1,67 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Administrator_AMaster, App_Web_iorwrcxi" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="../Stylesheets/MASTERSheet.css" rel="stylesheet" />
+    <link href="../Stylesheets/animate.css" rel="stylesheet" />
+    <link href="../Stylesheets/bootstrap.css" rel="stylesheet" />
+    <link href="../Stylesheets/font-awesome.css" rel="stylesheet" />
+    <link href="../Stylesheets/nexus.css" rel="stylesheet" />
+    <link href="../Stylesheets/responsive.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .bgimg {
+            height: 124px;
+        }
+        
+        .auto-style8 {
+            width: 100%;
+            height: 0px;
+        }
+    </style>
+    </head>
+    <body class="border" runat="server">
+        <form runat="server">
+
+<div class="container">    
+    
+    
+                <header class="bgimg" style="background-image: url('/background/bvc header new1.jpg'); background-position: center top; background-repeat: no-repeat; "></header>
+    <nav class="auto-style8">
+                    <ul >
+<asp:Label runat="server" ID="label" cssclass="lblses" Font-Size="22px" ForeColor="White"  ></asp:Label>
+    <asp:Button runat="server" Text="Logout" CssClass="log side" OnClick="Unnamed1_Click" />
+                            
+                        </ul>
+
+        </nav>
+    <article>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+                    <link href="../Stylesheets/Adefault.css" rel="stylesheet" />
+    
+                <nav class="d">
+   <button runat="server" class="button" formaction="ListStudent.aspx"><span>Student Details</span></button>
+    <button runat="server" class="button" formaction="ListFaculty.aspx"><span>Faculty Details</span></button>
+        <button runat="server" class="button" formaction="manageExams.aspx"><span>Manage Exams</span></button>
+        <button runat="server" class="button" formaction="publishedExams.aspx"><span>Published Exams</span></button>
+    <button runat="server" class="button" formaction="Results.aspx"><span>Results</span></button>
+ </nav>
+    <article class="" style="width:1192px; padding-top:3.5px; left:13%">
+        
+<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" >
+                    </asp:ContentPlaceHolder>
+</article>
+                    </asp:ContentPlaceHolder>
+        </article>
+
+    </div>
+            </form>
+    <footer>Copyright &copy; Bhavans Vivekananda College</footer>
+    
+</body>
+</html>

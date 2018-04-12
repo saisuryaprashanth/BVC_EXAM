@@ -1,0 +1,20 @@
+﻿<%@ master language="C#" masterpagefile="~/MasterPage.master" autoeventwireup="true" inherits="Faculty_FMaster, App_Web_g1dibf4w" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <asp:ContentPlaceHolder ID="head1" runat="server">
+
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:Label runat="server" ID="lblmsg" cssclass="lblses"  ></asp:Label>
+    <asp:Button runat="server" Text="Logout" CssClass="log side" OnClick="Unnamed1_Click" />
+
+<article class="arc">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" >
+     <link href="../Stylesheets/bootstrap.css" rel="stylesheet" />
+     <link href="../Stylesheets/Adefault.css" rel="stylesheet" />
+   
+                    </asp:ContentPlaceHolder>
+</article>
+</asp:Content>
+
