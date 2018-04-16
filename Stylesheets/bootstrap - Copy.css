@@ -1852,3 +1852,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .input-group-btn:last-child > .btn-group {
         margin-left: -1px;
     }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button{
+        -webkit-appearance: none;
+        -moz-appearance:none;
+        appearance:none;
+        margin:0;
+    }

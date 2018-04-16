@@ -1,4 +1,4 @@
-﻿<%@ master language="C#" autoeventwireup="true" inherits="Student_SMaster, App_Web_v3fws3uh" %>
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Student_SMaster, App_Web_nzet1ts4" %>
 
 <!DOCTYPE html>
 

@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/MasterPage.master" autoeventwireup="true" inherits="SRegistration, App_Web_2wpjolmy" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/MasterPage.master" autoeventwireup="true" inherits="SRegistration, App_Web_r44h2ogr" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -45,7 +45,7 @@
         </td>
         <td>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Name cannot be blank" ForeColor="Red" Font-Size="19px" ControlToValidate="TextBox1" Display="Dynamic"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox1" ForeColor="Red" Font-Size="19px" ErrorMessage="Provide a valid Name" ValidationExpression="^[a-zA-Z][a-zA-Z\\s]+$"></asp:RegularExpressionValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox1" ForeColor="Red" Font-Size="19px" ErrorMessage="Provide a valid Name" ValidationExpression="^[a-zA-Z''-'\s]{1,40}$"></asp:RegularExpressionValidator>
         </td>
     </tr>
     <tr>
@@ -96,6 +96,13 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Semester must be Selected" ForeColor="Red" Font-Size="19px" ControlToValidate="DropDownList3" InitialValue="Select Semester"></asp:RequiredFieldValidator>
             <br />
         </td>
+    </tr>
+    <tr>
+        <td class="auto-style13">Email:</td>
+        <td>
+            <asp:TextBox ID="txtemail" runat="server" Width="190px" CssClass="form-control" placeholder="Enter Email-id" Height="18px" TextMode="Email"></asp:TextBox>
+        </td>
+        <asp:RequiredFieldValidator ID="rfvemail" runat="server" ErrorMessage="Enter Email Id" ForeColor="Red" Font-Size="19px" ControlToValidate="txtemail" ></asp:RequiredFieldValidator>
     </tr>
     <tr>
         <td class="auto-style13" style="font-size:17px">Password:</td>

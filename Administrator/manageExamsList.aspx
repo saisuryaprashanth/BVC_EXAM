@@ -1,4 +1,4 @@
-﻿<%@ page title="manageExamList" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Administrator_manageExamsList, App_Web_53jops5d" %>
+﻿<%@ page title="manageExamList" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Administrator_manageExamsList, App_Web_a4pt5lzt" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>

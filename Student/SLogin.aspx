@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/MasterPage.master" autoeventwireup="true" inherits="SLogin, App_Web_2wpjolmy" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/MasterPage.master" autoeventwireup="true" inherits="SLogin, App_Web_r44h2ogr" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -90,7 +90,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" Text="Reset" Font-Size="15px" OnClick="Button2_Click" CssClass="btn-red btn" CausesValidation="false" />
         </td>
-        <td class="auto-style23">&nbsp;</td>
+        <td class="auto-style23"><a href="#" style="color:limegreen; font-size:16px;" onclick="window.open('ForgotPassword.aspx','FP','width=500,height=50,top=300,left=500,fullscreen=no,resizeable=0');">Forgot Password?</a><br /></td>
     </tr>
 </table>
 </asp:Content>

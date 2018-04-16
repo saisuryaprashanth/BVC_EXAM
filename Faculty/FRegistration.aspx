@@ -1,4 +1,4 @@
-﻿<%@ page language="C#" autoeventwireup="true" inherits="FRegistration, App_Web_g1dibf4w" masterpagefile="~/MasterPage.master" title="Faculty Registration" %>
+﻿<%@ page language="C#" autoeventwireup="true" inherits="FRegistration, App_Web_2e0fzwos" masterpagefile="~/MasterPage.master" title="Faculty Registration" %>
 
 
 <asp:Content ID="Freg" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

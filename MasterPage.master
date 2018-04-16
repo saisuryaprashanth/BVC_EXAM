@@ -1,4 +1,4 @@
-﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_y1eteq5p" %>
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_bl1esthe" %>
 
 <!DOCTYPE html>
 
@@ -73,7 +73,7 @@
                     </asp:ContentPlaceHolder>
             </form>
         </article>
-    <footer>Copyright &copy; Bhavans Vivekananda College</footer>
+    <footer>Copyright &copy; Bhavans Vivekananda College. 2018</footer>
     </div>
 </body>
 </html>

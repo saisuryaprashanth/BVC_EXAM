@@ -1,4 +1,4 @@
-﻿<%@ page title="manageExams" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Faculty_manageExams, App_Web_gq4fhd3r" validaterequest="false" debug="true" %>
+﻿<%@ page title="manageExams" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Faculty_manageExams, App_Web_e5ldnlkb" validaterequest="false" debug="true" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>

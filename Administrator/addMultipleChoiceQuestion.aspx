@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Faculty_addMultipleChoiceQuestion, App_Web_53jops5d" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Faculty_addMultipleChoiceQuestion, App_Web_a4pt5lzt" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">

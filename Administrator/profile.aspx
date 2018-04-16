@@ -1,33 +1,13 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/Faculty/Fdefaul.master" autoeventwireup="true" inherits="Faculty_FProfile, App_Web_eqqmw0t0" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Administrator_profile, App_Web_a4pt5lzt" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-     <style type="text/css">
-        .auto-style9 {
-            text-align: right;
-            width: 447px;
-        }
-        .auto-style10 {
-            margin-left: 40px;
-            width: 233px;
-        }
-        .auto-style11 {
-            width: 233px;
-        }
-        .auto-style12 {
-            margin-right: 4;
-        }
-        .auto-style13 {
-            text-align: right;
-            width: 362px;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" Runat="Server">
-        <asp:Button ID="btnpass" runat="server" Text="Change Password" CssClass="btn-info btn-aqua" OnClick="btnpass_Click" CausesValidation="false" />
+    <asp:Button ID="btnpass" runat="server" Text="Change Password" CssClass="btn-info btn-aqua" OnClick="btnpass_Click" CausesValidation="false" />
     <asp:Panel ID="pnlpass" runat="server" Visible="false">
-        <table class="nav-justified">
+<table class="nav-justified">
             <tr>
-                <td class="auto-style13">Employee ID:</td>
+                <td class="auto-style13">ID:</td>
                 <td class="auto-style10">
                     <asp:Label ID="lblr" CssClass="logo-text" runat="server" Text=""></asp:Label>
                 </td>
@@ -83,8 +63,6 @@
                 <td class="text-left">&nbsp;</td>
             </tr>
         </table>
-
-    </asp:Panel>
-
+        </asp:Panel>
 </asp:Content>
 

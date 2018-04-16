@@ -1,4 +1,4 @@
-﻿<%@ page title="question" language="C#" masterpagefile="~/Student/SQuestion.master" autoeventwireup="true" inherits="Student_question, App_Web_g2jg54xx" %>
+﻿<%@ page title="question" language="C#" masterpagefile="~/Student/SQuestion.master" autoeventwireup="true" inherits="Student_question, App_Web_chhkj22b" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     
@@ -12,7 +12,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="col-md-2"  style="float:right; top:10%; right:0px;">                                            
-                                         <div class="blog-tags" style="float:right">
+                                         <div class="blog-tags" style="float:right; font-size:17px;">
                                           <h3 class="title" style="font-weight:400"></h3>
                                            <div style="font-weight:600" class=" text-danger" id="showtime">
                                                <asp:ScriptManager ID="sp" runat="server"></asp:ScriptManager>
@@ -64,19 +64,19 @@
 
                                  <ItemTemplate>
                                    <%-- <h3 class="title" >Question: <%#Eval("RowNumber") %></h3> --%>
-                                     <p><asp:Label runat="server" Text="Question"></asp:Label><br /><%#Eval("questionText") %><br />
+                                     <p style="font-size:18px"><asp:Label runat="server" Text="Question"></asp:Label><br /><%#Eval("questionText") %><br />
                                      <asp:Image runat="server" Height="100px" Width="900px" ImageUrl='<%# Eval("questionImage")%>' />
-                                     
-                                    <p>
+                                     </p>
+                                    <p style="font-size:18px">
                                         <asp:RadioButton runat="server" Font-Bold="false" GroupName='<%#Eval("questionID") %>'  ID="answerA" Text=<%# Eval("answer1") %>/>
                                     </p>
-                                     <p>
+                                     <p style="font-size:18px">
                                         <asp:RadioButton runat="server" Font-Bold="false" GroupName='<%#Eval("questionID") %>'  ID="answerB" Text=<%#Eval("answer2") %>/>
                                     </p>
-                                     <p>
+                                     <p style="font-size:18px">
                                         <asp:RadioButton runat="server" Font-Bold="false"  GroupName='<%#Eval("questionID") %>'  ID="answerC" Text=<%#Eval("answer3") %>/>
                                     </p>
-                                     <p>
+                                     <p style="font-size:18px">
                                         <asp:RadioButton runat="server" Font-Bold="false"  GroupName='<%#Eval("questionID") %>'  ID="answerD" Text=<%#Eval("answer4") %>/>
                                     </p>
                                                                               

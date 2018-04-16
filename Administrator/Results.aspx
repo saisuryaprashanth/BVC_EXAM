@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Administrator_Results, App_Web_53jops5d" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Administrator_Results, App_Web_a4pt5lzt" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -11,15 +11,24 @@
    
     <div>
         <asp:Label ID="lblid" Font-Size="18px" runat="server" Text="Subject ID:"></asp:Label>
-        <asp:TextBox ID="txtsch" runat="server" TextMode="Search" CssClass="form-inline" Width="100"></asp:TextBox>
+        <asp:TextBox ID="txtsch" runat="server" Font-Size="18px" TextMode="Search" CssClass="form-inline" AutoPostBack="true" Width="100"></asp:TextBox>
+        <asp:Label ID="lblid0" Font-Size="18px" runat="server" Text="Year:"></asp:Label>
+        <asp:DropDownList ID="DropDownList1" runat="server" Font-Size="18px" OnDataBound="DropDownList1_DataBound" CssClass="dropdown-toggle" AutoPostBack="true" DataSourceID="SqlDataSource1" DataTextField="Year" DataValueField="Year">
+        </asp:DropDownList>
         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Font-Size="18px" Text="Search" CssClass=" btn btn-info" />
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ES %>" ProviderName="<%$ ConnectionStrings:ES.ProviderName %>" SelectCommand="SELECT DISTINCT [Year] FROM [studentExamSubmit] WHERE ([subjectID] = @subjectID)">
+            <SelectParameters>
+                <asp:ControlParameter ControlID="txtsch" Name="subjectID" PropertyName="Text" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
     </div>
-    <div style="position: relative; top: -34px; left: 900px; width: 300px;">
+    <%--<div style="position: relative; top: -34px; left: 900px; width: 300px;">
         <asp:Label ID="lblsub" Font-Size="18px" runat="server" Text="Subject ID:"></asp:Label>
         <asp:TextBox ID="txtdel" runat="server" TextMode="Search" CssClass="form-inline" Width="100"></asp:TextBox>
         <asp:Button ID="btndel" runat="server" Text="Delete" CssClass=" btn btn-red" Font-Size="18px" OnClick="btndel_Click" />
-    </div>
+    </div>--%>
     <asp:Button ID="btnexp" runat="server"  OnClick="Button1_Click" Visible="false" Font-Size="18px" CssClass="btn btn-violet" Text="Export to Excel" />
+                                    <asp:Label ID="lblsubname" Font-Size="18px" Visible="false" style="position:absolute;align-content:center; left:43%;" Font-Bold="true" runat="server"></asp:Label>
     <br />
     <asp:GridView ID="listResult" HorizontalAlign="Center" AutoGenerateColumns="False" GridLines="Vertical" BorderStyle="None" runat="server" Visible="False" Font-Size="19px" Caption="Reports" CaptionAlign="Top" BackColor="White" BorderColor="#DEDFDE" BorderWidth="1px" CellPadding="4" ForeColor="Black" >
         <AlternatingRowStyle BackColor="White" />

@@ -1,4 +1,4 @@
-﻿<%@ master language="C#" masterpagefile="~/MasterPage.master" autoeventwireup="true" inherits="Administrator_Admin, App_Web_iorwrcxi" %>
+﻿<%@ master language="C#" masterpagefile="~/MasterPage.master" autoeventwireup="true" inherits="Administrator_Admin, App_Web_o5vkc4vz" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="head">    
     <asp:ContentPlaceHolder ID="head1" runat="server">
@@ -19,6 +19,8 @@
         <button runat="server" class="button" formaction="manageExams.aspx"><span>Manage Exams</span></button>
         <button runat="server" class="button" formaction="publishedExams.aspx"><span>Published Exams</span></button>
     <button runat="server" class="button" formaction="Results.aspx"><span>Results</span></button>
+    <button runat="server" class="button" formaction="profile.aspx"><span>Profile</span></button>
+
 
     </nav>
     <article class="arc">

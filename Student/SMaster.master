@@ -1,4 +1,4 @@
-﻿<%@ master language="C#" autoeventwireup="true" inherits="Student_SMaster, App_Web_2wpjolmy" %>
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Student_SMaster, App_Web_r44h2ogr" %>
 
 <!DOCTYPE html>
 
@@ -57,7 +57,7 @@
         </article>
     </div>
             </form>
-    <footer>Copyright &copy; Bhavans Vivekananda College</footer>
+    <footer>Copyright &copy; Bhavans Vivekananda College. 2018</footer>
     
 </body>
 </html>

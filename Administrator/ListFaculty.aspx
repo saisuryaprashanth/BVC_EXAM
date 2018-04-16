@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Administrator_ListFaculty, App_Web_53jops5d" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Administrator_ListFaculty, App_Web_a4pt5lzt" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -81,7 +81,7 @@
         </EmptyDataTemplate>
         <EmptyDataRowStyle BackColor="Wheat" ForeColor="RoyalBlue" />
         <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
-        <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
+        <HeaderStyle ForeColor="#0066ff" Font-Bold="true"  />
         <PagerStyle BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" />
         <RowStyle BackColor="White" ForeColor="#003399" />
         <SelectedRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />

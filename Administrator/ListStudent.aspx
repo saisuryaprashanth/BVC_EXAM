@@ -1,4 +1,4 @@
-﻿<%@ page title="" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Administrator_ListStudent, App_Web_53jops5d" %>
+﻿<%@ page title="" language="C#" masterpagefile="~/Administrator/AMaster.master" autoeventwireup="true" inherits="Administrator_ListStudent, App_Web_a4pt5lzt" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -18,7 +18,7 @@
             <asp:BoundField DataField="semesters" HeaderText="Semester" SortExpression="semesters" />
         </Columns>
         <FooterStyle BackColor="White" ForeColor="#000066" />
-        <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle ForeColor="#0066ff" Font-Bold="true"  />
         <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
         <RowStyle ForeColor="#000066" />
         <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
@@ -48,6 +48,7 @@
     </asp:SqlDataSource>
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" CssClass="table table-bordered table-hover table-condensed table-responsive" Width="500px" AllowSorting="True" ShowFooter="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="subjectid" DataSourceID="SqlDataSource1" Visible="False">
         <Columns>
+            <asp:CommandField ShowDeleteButton="True" />
             <asp:TemplateField ShowHeader="False" ItemStyle-Width="40px">
                 <EditItemTemplate>
                     <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" CommandName="Update" Text="Update"></asp:LinkButton>
@@ -59,6 +60,8 @@
                 <FooterTemplate>
                     <asp:LinkButton ID="InsertButton1" runat="server" OnClick="Insert_Button" CausesValidation="true" CommandName="Insert" Text="Insert"></asp:LinkButton>
                 </FooterTemplate>
+
+<ItemStyle Width="40px"></ItemStyle>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Courses" ItemStyle-Width="50px" SortExpression="courses">
                 <EditItemTemplate>
@@ -70,6 +73,8 @@
                 <FooterTemplate>
                     <asp:TextBox runat="server" ID="Courseins"></asp:TextBox>
                 </FooterTemplate>
+
+<ItemStyle Width="50px"></ItemStyle>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Groups" ItemStyle-Width="150px" SortExpression="groups">
                 <EditItemTemplate>
@@ -81,6 +86,8 @@
                 <FooterTemplate>
                     <asp:TextBox runat="server" ID="groupins"></asp:TextBox>
                 </FooterTemplate>
+
+<ItemStyle Width="150px"></ItemStyle>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Semesters" ItemStyle-Width="150px" SortExpression="semesters">
                 <EditItemTemplate>
@@ -92,6 +99,8 @@
                 <FooterTemplate>
                     <asp:TextBox runat="server" ID="semesterins"></asp:TextBox>
                 </FooterTemplate>
+
+<ItemStyle Width="150px"></ItemStyle>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Subjects" ItemStyle-Width="250px" SortExpression="subjects">
                 <EditItemTemplate>
@@ -103,6 +112,8 @@
                 <FooterTemplate>
                     <asp:TextBox runat="server" Width="250px" ID="subjectins"></asp:TextBox>
                 </FooterTemplate>
+
+<ItemStyle Width="250px"></ItemStyle>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Subjectid" ItemStyle-Width="150px" SortExpression="subjectid">
                 <EditItemTemplate>
@@ -114,6 +125,8 @@
                 <FooterTemplate>
                     <asp:TextBox runat="server" ID="subidins"></asp:TextBox>
                 </FooterTemplate>
+
+<ItemStyle Width="150px"></ItemStyle>
             </asp:TemplateField>
             
             
@@ -121,8 +134,8 @@
         
         
         <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
+        <HeaderStyle ForeColor="#0066ff" Font-Bold="true"  />
        
-        <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
         <PagerStyle BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" />
         <RowStyle BackColor="White" ForeColor="#003399" />
         <SelectedRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
